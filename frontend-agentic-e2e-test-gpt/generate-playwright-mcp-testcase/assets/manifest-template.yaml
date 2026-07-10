@@ -1,0 +1,20 @@
+schema_version: "1.0"
+feature: "<feature-name>"
+source_documents:
+  - "<relative/path/to/plan.md>"
+generated_at: "<RFC-3339-timestamp-with-timezone>"
+coverage:
+  - requirement: "<requirement-id-or-heading>"
+    description: "<功能点或验收标准>"
+    positive_cases:
+      - "<positive-case-id>"
+    negative_cases:
+      - "<negative-case-id>"
+cases:
+  - id: "<case-id>"
+    file: "<case-id>.yaml"
+    title: "<可读用例标题>"
+    case_type: "positive"
+    priority: "medium"
+assumptions: []
+open_questions: []

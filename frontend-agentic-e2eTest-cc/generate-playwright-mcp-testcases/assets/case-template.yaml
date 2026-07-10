@@ -1,0 +1,31 @@
+# 单用例起步模板。复制后按实际需求填充，删除本行及占位注释。
+# 字段含义见 references/yaml-schema.md。
+id: <feature>-<intent>-<result>        # 与文件名一致，如 create-user-success
+title: <人类可读标题，说明意图与预期>
+feature: <特性名，与目录名一致>
+case_type: positive                     # positive 或 negative
+expected_behavior: success              # 负向必填：validation_error / request_blocked / permission_denied ...
+source: <来源文档，如 plan.md>
+priority: high                          # high / medium / low
+
+preconditions:
+  - <执行前应满足的状态，如 已登录管理员账号>
+
+test_data:
+  <字段名>: <值>
+
+steps:
+  - action: navigate                    # navigate/click/fill/select/check/hover/press/upload/wait_for
+    target: <路径或可读控件名>
+    expected: <该步后的可观察预期>
+  - action: click
+    target: <可读控件名>
+
+assertions:
+  - type: visible_text                  # 断言词表见 references/yaml-schema.md
+    target: <应出现的文案>
+    required: true
+    timeout_ms: 5000                    # toast/瞬时元素建议填
+
+cleanup:
+  - <测试后如何清理；负向用例通常写：无需清理，用例不应创建数据>

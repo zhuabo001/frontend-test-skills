@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.1",
+  "run_id": "<run-id>",
+  "run_status": "running",
+  "selection": {
+    "mode": "<all|feature|files>",
+    "source_path": "<input-path>",
+    "manifests": []
+  },
+  "base_url": null,
+  "started_at": "<RFC-3339-timestamp>",
+  "ended_at": null,
+  "duration_ms": 0,
+  "environment": {
+    "browser": "chromium",
+    "frontend_command": null,
+    "frontend_service": "<reused|started|not-required|unavailable>",
+    "frontend_started_by_runner": false,
+    "branch": "unknown",
+    "commit": "unknown",
+    "limitations": []
+  },
+  "executor": {
+    "name": "playwright-mcp",
+    "status": "<checking|available|unavailable>",
+    "failure_category": null,
+    "diagnostic": null
+  },
+  "authentication": {
+    "required_for_selected_cases": null,
+    "mode": "<none|existing_session|storage_state|manual|credentials>",
+    "status": "<checking|awaiting_user|not_required|authenticated|blocked|error>",
+    "session_reused": false,
+    "mfa_encountered": false,
+    "diagnostic": null
+  },
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "blocked": 0,
+    "inconclusive": 0,
+    "error": 0
+  },
+  "cases": [
+    {
+      "id": "<case-id>",
+      "title": "<case-title>",
+      "feature": "<feature-name>",
+      "case_type": "<positive|negative>",
+      "source_file": "<relative-case-path>",
+      "status": "<passed|failed|blocked|inconclusive|error>",
+      "started_at": "<RFC-3339-timestamp>",
+      "ended_at": "<RFC-3339-timestamp>",
+      "duration_ms": 0,
+      "preconditions": [
+        {
+          "description": "<precondition>",
+          "status": "<passed|blocked|error>",
+          "actual": "<observation>"
+        }
+      ],
+      "steps": [
+        {
+          "index": 1,
+          "action": "<action>",
+          "target": "<target>",
+          "status": "<passed|failed|blocked|inconclusive|error>",
+          "actual": "<observation>",
+          "duration_ms": 0,
+          "screenshot": null
+        }
+      ],
+      "assertions": [
+        {
+          "index": 1,
+          "type": "<assertion-type>",
+          "target": "<target>",
+          "expected": "<expected-result>",
+          "actual": "<observation>",
+          "status": "<passed|failed|inconclusive|error>",
+          "evidence": []
+        }
+      ],
+      "cleanup": [
+        {
+          "description": "<cleanup-action>",
+          "status": "<passed|skipped|error>",
+          "actual": "<observation>"
+        }
+      ],
+      "evidence": {
+        "screenshots": [],
+        "console_errors": [],
+        "network_errors": [],
+        "artifacts": []
+      },
+      "failure": null
+    }
+  ],
+  "run_errors": [],
+  "warnings": []
+}

@@ -1,0 +1,14 @@
+# manifest 起步模板。复制到特性子目录下命名为 manifest.yaml，填充后删除占位注释。
+feature: <特性名，与目录名一致>
+source: <来源文档，如 plan.md>
+generated_at: "<ISO8601 时间，如 2026-07-09T14:30:00+08:00>"
+summary:
+  total: 0
+  positive: 0
+  negative: 0
+cases:
+  - id: <用例 id>
+    file: <用例文件名.yaml>
+    case_type: positive          # 或 negative
+    priority: high
+    covers: "<该用例覆盖的功能点/校验规则>"

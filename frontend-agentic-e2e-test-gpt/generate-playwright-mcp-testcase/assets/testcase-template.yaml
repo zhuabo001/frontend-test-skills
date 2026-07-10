@@ -1,0 +1,26 @@
+schema_version: "1.0"
+id: "<case-id>"
+title: "<可读用例标题>"
+feature: "<feature-name>"
+case_type: "positive"
+priority: "medium"
+review_status: "ready"
+source:
+  documents:
+    - "<relative/path/to/plan.md>"
+  requirements:
+    - "<requirement-id-or-heading>"
+preconditions:
+  - "<前置条件>"
+test_data: {}
+steps:
+  - action: "navigate"
+    target: "<route-or-url>"
+    expected: "<可继续执行的页面状态>"
+assertions:
+  - type: "element_visible"
+    target: "<accessible-target>"
+    required: true
+cleanup:
+  - "<清理动作或无需清理的原因>"
+notes: []

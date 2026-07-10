@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate Playwright MCP Test Cases"
+  short_description: "Generate reviewable YAML cases for Playwright MCP"
+  default_prompt: "Use $generate-playwright-mcp-testcase to turn this feature plan into structured Playwright MCP YAML test cases."

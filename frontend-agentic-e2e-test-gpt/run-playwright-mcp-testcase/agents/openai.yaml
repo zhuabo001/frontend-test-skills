@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Playwright MCP Test Cases"
+  short_description: "Execute MCP YAML cases and capture evidence reports"
+  default_prompt: "Use $run-playwright-mcp-testcase to execute these Playwright MCP YAML cases and produce an evidence-backed JSON report."
